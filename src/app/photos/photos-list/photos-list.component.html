@@ -1,0 +1,25 @@
+<header>
+  <div class="col-sm-12 btn btn-primary hd">Image Gallery</div>
+</header>
+
+<div class="col-sm-3">
+  <select
+    class="form-select form-select-lg mb-4"
+    (change)="changeAlbum($event)"
+  >
+    
+    <option *ngFor="let album of albums" [value]="album">
+      Album {{ album }}
+    </option>
+  </select>
+</div>
+
+<div *ngIf="photos$ | async as photos" class="thumbnails">
+  <div class="flex-item" *ngFor="let photo of photos | filterAlbum: filterBy">
+      
+    <a [routerLink]="['/photo-details', photo.id]">
+      <img src="{{ photo.thumbnailUrl }}" class="img" />
+    </a>
+    <div class="desc">{{ photo.title }}</div>
+  </div>
+</div>

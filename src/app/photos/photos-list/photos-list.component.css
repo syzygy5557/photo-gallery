@@ -1,0 +1,39 @@
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin:auto;
+}
+header {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+.hd {
+    border-radius:25px;
+}
+.thumbnails {
+  display: flex;
+  justify-content: flex-space-between;
+
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 70vh;
+}
+.flex-item {
+  padding:.8rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 0;
+  padding-bottom:4px;
+}
+img {
+    border:2px solid black;
+}
+
+
+div.desc {
+    padding: 3px;
+    
+  }
+

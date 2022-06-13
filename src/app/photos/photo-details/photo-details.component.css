@@ -1,0 +1,17 @@
+.card-body {
+  margin: 0 auto; /* Added */
+}
+.card {
+  margin-top: 8%;
+  border: none;
+}
+.card-title {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 5px;
+}
+img{
+    border:2px solid black;
+}
+
+
